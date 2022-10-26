@@ -15,7 +15,7 @@ import java.net.URI;
 @RestController
 public class UserController {
 
-    private UserService userService;
+    private final UserService userService;
 
     @PostMapping
     public ResponseEntity<?> post(@RequestBody User user) {

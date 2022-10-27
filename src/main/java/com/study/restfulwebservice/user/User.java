@@ -1,7 +1,9 @@
 package com.study.restfulwebservice.user;
 
+import lombok.Builder;
 import lombok.Data;
 
+@Builder
 @Data
 public class User {
 

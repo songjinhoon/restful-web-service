@@ -1,15 +1,11 @@
-package com.study.restfulwebservice.user;
+package com.study.restfulwebservice.domain.user;
 
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.servlet.support.ServletUriComponentsBuilder;
 
-import java.io.InputStream;
 import java.net.URI;
-import java.util.ArrayList;
-import java.util.List;
-import java.util.stream.IntStream;
 
 @RequiredArgsConstructor
 @RequestMapping("/api/user")
@@ -18,18 +14,14 @@ public class UserController {
 
     private final UserService userService;
 
+    @GetMapping("/{id}")
+    public ResponseEntity<?> get(@PathVariable Long id) {
+        return ResponseEntity.ok().body(userService.get(id));
+    }
+
     @GetMapping
     public ResponseEntity<?> get() {
-        List<User> users = new ArrayList<>();
-        IntStream.range(0, 5).forEach(value -> {
-            users.add(User.builder()
-                    .id((long) value)
-                    .username("username" + value)
-                    .password("password" + value)
-                    .name("name" + value)
-                    .build());
-        });
-        return ResponseEntity.ok().body(users);
+        return ResponseEntity.ok().body(userService.get());
     }
 
     @PostMapping

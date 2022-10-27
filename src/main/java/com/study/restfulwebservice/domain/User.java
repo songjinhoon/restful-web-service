@@ -5,7 +5,7 @@ import lombok.*;
 import lombok.experimental.SuperBuilder;
 
 //@JsonIgnoreProperties(value = {"password", "name"}) 이것도  @JsonIgnore와 동일함
-@JsonFilter("UserInfo")
+//@JsonFilter("UserInfo")
 @AllArgsConstructor
 @NoArgsConstructor
 @SuperBuilder

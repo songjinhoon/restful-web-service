@@ -8,6 +8,10 @@ logging:
       SQL: DEBUG
 
 spring:
+  security:
+    user:
+      name: devhoon
+      password: devhoon
   messages:
     basename: messages
 

@@ -1,12 +1,6 @@
 server:
   port: 8000
 
-logging:
-  level:
-    org.springframework: DEBUG
-    org.hibernate:
-      SQL: DEBUG
-
 spring:
   h2:
     console:
@@ -17,14 +11,24 @@ spring:
     username: sa
     password:
     driver-class-name: org.h2.Driver
+  jpa:
+    database-platform: org.hibernate.dialect.H2Dialect
+    hibernate:
+      ddl-auto: create-drop
+    properties:
+      hibernate:
+        format_sql: true
+    defer-datasource-initialization: true
+  sql:
+    init:
+      mode: always
   security:
     user:
       name: devhoon
       password: devhoon
   messages:
     basename: messages
-  jpa:
-    show-sql: true
+
 # HAL EXPLORER 추가 기능설정
 management:
   endpoints:

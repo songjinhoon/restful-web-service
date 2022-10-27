@@ -1,18 +1,24 @@
 package com.study.restfulwebservice.domain;
 
-import com.fasterxml.jackson.annotation.JsonFilter;
 import lombok.*;
-import lombok.experimental.SuperBuilder;
+
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.Id;
+import javax.persistence.Table;
 
 //@JsonIgnoreProperties(value = {"password", "name"}) 이것도  @JsonIgnore와 동일함
 //@JsonFilter("UserInfo")
-@AllArgsConstructor
-@NoArgsConstructor
-@SuperBuilder
+@AllArgsConstructor(access = AccessLevel.PROTECTED)
+@NoArgsConstructor(access = AccessLevel.PROTECTED)
+@Builder(access = AccessLevel.PROTECTED)
 @Getter
-@Setter
+@Entity
+@Table(name = "usr")
 public class User {
 
+    @Id
+    @GeneratedValue
     private Long id;
 
     private String username;

@@ -7,7 +7,7 @@ import lombok.experimental.SuperBuilder;
 @JsonFilter("UserInfoV2")
 @AllArgsConstructor
 @NoArgsConstructor
-@SuperBuilder
+//@SuperBuilder
 @Getter
 @Setter
 public class UserV2 extends User {

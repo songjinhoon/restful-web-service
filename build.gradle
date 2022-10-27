@@ -26,6 +26,7 @@ dependencies {
     implementation 'org.springframework.boot:spring-boot-starter-actuator'    // 서버 모니터링
     implementation 'org.springframework.data:spring-data-rest-hal-explorer'   // HAL
     implementation 'com.fasterxml.jackson.dataformat:jackson-dataformat-xml'  // xml 요청 처리
+    implementation 'com.github.gavlyukovskiy:p6spy-spring-boot-starter:1.8.1'
     developmentOnly 'org.springframework.boot:spring-boot-devtools'
 
     compileOnly 'org.projectlombok:lombok'

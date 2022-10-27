@@ -17,14 +17,14 @@ public class UserService {
     private static final int USERS_COUNT = 3;
 
     static {
-        IntStream.range(0, 3).forEach(value -> {
+        /*IntStream.range(0, 3).forEach(value -> {
             users.add(User.builder()
                     .id((long) value)
                     .username("username" + value)
                     .password("password" + value)
                     .name("name" + value)
                     .build());
-        });
+        });*/
     }
 
     public User get(Long id) {

@@ -1,4 +1,4 @@
-package com.study.restfulwebservice.web.controller;
+package com.study.restfulwebservice.presentation.contorller;
 
 
 import lombok.RequiredArgsConstructor;

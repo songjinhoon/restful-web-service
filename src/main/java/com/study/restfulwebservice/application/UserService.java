@@ -1,5 +1,6 @@
-package com.study.restfulwebservice.domain.user;
+package com.study.restfulwebservice.application;
 
+import com.study.restfulwebservice.domain.User;
 import org.springframework.http.HttpStatus;
 import org.springframework.stereotype.Service;
 import org.springframework.web.server.ResponseStatusException;

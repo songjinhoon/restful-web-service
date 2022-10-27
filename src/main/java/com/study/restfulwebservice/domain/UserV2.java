@@ -1,4 +1,4 @@
-package com.study.restfulwebservice.domain.user;
+package com.study.restfulwebservice.domain;
 
 import com.fasterxml.jackson.annotation.JsonFilter;
 import lombok.*;

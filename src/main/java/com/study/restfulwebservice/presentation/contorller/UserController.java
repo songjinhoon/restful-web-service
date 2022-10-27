@@ -1,5 +1,7 @@
-package com.study.restfulwebservice.domain.user;
+package com.study.restfulwebservice.presentation.contorller;
 
+import com.study.restfulwebservice.domain.User;
+import com.study.restfulwebservice.application.UserService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;

@@ -1,11 +1,11 @@
-package com.study.restfulwebservice.domain.admin;
+package com.study.restfulwebservice.presentation.contorller;
 
 import com.fasterxml.jackson.databind.ser.FilterProvider;
 import com.fasterxml.jackson.databind.ser.impl.SimpleBeanPropertyFilter;
 import com.fasterxml.jackson.databind.ser.impl.SimpleFilterProvider;
-import com.study.restfulwebservice.domain.user.User;
-import com.study.restfulwebservice.domain.user.UserService;
-import com.study.restfulwebservice.domain.user.UserV2;
+import com.study.restfulwebservice.domain.User;
+import com.study.restfulwebservice.application.UserService;
+import com.study.restfulwebservice.domain.UserV2;
 import lombok.RequiredArgsConstructor;
 import org.springframework.beans.BeanUtils;
 import org.springframework.http.ResponseEntity;
